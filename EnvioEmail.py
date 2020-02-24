@@ -7,12 +7,12 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(40, GPIO.IN)
 # Datos de envio
-SourceAdress = "sdaahomepi@gmail.com"
-DestinyAdress = "sdaahomepi@gmail.com"
+SourceAdress = "*******"
+DestinyAdress = "*******"
 
 server = stmplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login(SourceAdress, "sdaamiera1!")
+server.login(SourceAdress, "*******")
 
 msg = MIMEMultipart()
 msg['From'] = SourceAdress
