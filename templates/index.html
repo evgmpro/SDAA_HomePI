@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Home Pi Security</title>
+    <link rel="stylesheet" href='../static/style.css'/>
+    <style>
+		body {
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+    <h1>Proyecto SDAA: Home Pi Security</h1>
+
+
+
+    <h3><img src="{{ url_for('video_feed') }}" width="50%"></h3>
+	<p> Angulos de giro de la camara:
+	<form method="POST">
+		<p> Eje Horizontal (10-170º):  <input type="text" name="AnguloX" value= {{AnguloX}} size="3">
+		Eje Vertical (40-110º): <input type="text" name="AnguloY" value= {{AnguloY}} size="3">
+		<input type="submit">
+	</form>
+        </p>
+	<hr>
+	<h4> Intruso presente: {{ senPIR }}</h4>
+	<hr>
+	<p> @MIERA 2020 Proyecto SDAA Rafael y Evgeny</p>
+  </body>
+</html>
+
+
+
